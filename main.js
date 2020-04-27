@@ -37,7 +37,7 @@ app.post('/sendMail' , ( req , res ) => {
             }) 
         } 
         catch (error) {
-            console.log( 'error : ' , error)
+            console.log( error)
         }
     }
 
@@ -54,7 +54,7 @@ app.get( '/' , ( req , res ) => {
            })
         } 
         catch (error) {
-            console.log( 'error : ' , error)
+            console.log( error)
         }
     }
     return send()
