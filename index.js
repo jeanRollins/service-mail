@@ -4,6 +4,8 @@ const app = express()
 app.use( express.json() )
 
 app.post('/sendMail' , ( req , res ) => {
+    res.header('Access-Control-Allow-Origin', '*')
+
     const send = async () => {
 
         try {
@@ -45,6 +47,8 @@ app.post('/sendMail' , ( req , res ) => {
 })
 
 app.get( '/' , ( req , res ) => {
+
+    res.header('Access-Control-Allow-Origin', '*')
 
     const send = async () => {
         try {
