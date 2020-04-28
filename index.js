@@ -60,6 +60,7 @@ app.get( '/' , ( req , res ) => {
     return send()
 })
 
-app.listen( 7000, () => {
+app.listen( process.env.PORT || 7000, () => {
+   console.log('Status : server OK!' )
    
 })
