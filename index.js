@@ -42,7 +42,6 @@ app.post('/sendMail' , ( req , res ) => {
             console.log( error)
         }
     }
-
     return send()
 })
 
